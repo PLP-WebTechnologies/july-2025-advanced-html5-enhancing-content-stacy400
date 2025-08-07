@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title> enhanced html</title>
+</head>
+
+<body>
+    <h2>unordered list</h2>
+    <ul>
+        <li>html</li>
+        <li>javascript</li>
+        <li>css</li>
+    </ul>
+    <h2>ordered list</h2>
+    <ol>
+        <li>sql</li>
+        <li>python</li>
+        <li>java</li>
+    </ol>
+    <h2>Nested list</h2>
+    <ul>
+        <li> steps on how to cook rice:
+            <ol>
+                <li>Wash the rice</li>
+                <li>Boil water</li>
+                <li>Cook rice</li>
+            </ol>
+        </li>
+    </ul>
+    <h2>defination list</h2>
+    <dl>
+        <dt>HTML</dt>
+        <dd>HyperText Markup Language</dd>
+    </dl>
+    <h2>image</h2>
+    <img src="https://images.pexels.com/photos/1563356/pexels-photo-1563356.jpeg" alt="A sample image" width="300"
+        height="200">
+    <h2>vedio</h2>
+    <video controls width="350" height="200">
+        <source src="https://videos.pexels.com/video-files/4434242/4434242-uhd_1440_2560_24fps.mp4" type="video/mp4">
+        Your browser does not support video playback.
+    </video>
+    <h2>audio</h2>
+    <audio controls>
+        <source src="/storage/emulated/0/Music/SoundRecorder/20250802_105438.aac" type="audio/mpeg">
+        Your browser does not support audio playback.
+    </audio>
+    <h2>tables</h2>
+    <table border="1">
+        <caption>class data</caption>
+        <thead>
+            <tr>
+                <th>Fname </th>
+                <th>Lname </th>
+                <th>Age </th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>stacy</td>
+                <td>njoga</td>
+                <td>20</td>
+            </tr>
+            <tr>
+                <td>cythia</td>
+                <td>njoga</td>
+                <td>23</td>
+            </tr>
+        </tbody>
+    </table>
+    <h2>form</h2>
+    <form action="upload.php" method="POST" enctype="multipart/form-data">
+        <fieldset>
+            <legend>Personal Information</legend>
+            <label for="name">username</label>
+            <input type="text" name="name" id="name" minlength="10" placeholder="Enter your username" autocomplete="on"
+                requierd>
+            <br><br>
+            <label for="email">Email</label>
+            <input type="text" name="email" id="email" placeholder="Enter your email" autocomplete="on" required>
+            <br><br>
+            <label for="cv"> cv</label>
+            <input type="file" name="file" id="cv" placeholder="Upload your cv" required>
+            <br><br>
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" required pattern="[0-9]{10}" placeholder="enter phone number">
+            <small>Format: 10 digits only</small>
+            <br><br>
+            <label for="dob">Date of Birth:</label>
+            <input type="date" id="dob" name="dob" required>
+            <br><br>
+            <label for="gender">select your gender:</label>
+            <select name="gender" id="gender">
+                <option value="Male">Male:</option>
+                <option value="Female">Female:</option>
+            </select>
+            <label for="country">Country:</label>
+            <input type="text" id="country" name="country" value="Kenya" readonly>
+            <br><br>
+            <label for="bio">Your Bio:</label>
+            <textarea name="bio" id="bio" rows="4" cols="50"></textarea>
+            <br><br>
+            <input type="submit" value="submit">
+        </fieldset>
+    </form>
+</body>
+
+</html>
